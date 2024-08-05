@@ -1,0 +1,52 @@
+#about {
+  background-color: var(--color-theme-2);
+}
+
+.about__left p {
+  margin-bottom: 0.8rem;
+}
+
+.about__left h2 {
+  margin-bottom: 2rem;
+}
+
+.about__left .btn {
+  margin-top: 2.5rem;
+}
+
+.about__container {
+  display: grid;
+  grid-template-columns: 53% 35%;
+  gap: 12%;
+}
+
+.about__portrait {
+  height: fit-content;
+  max-height: 42rem;
+  border: 1rem solid var(--color-theme-1);
+  transition: var(--transition);
+}
+
+.about__portrait:hover {
+  border-width: 0;
+}
+
+/* tablets */
+@media screen and (max-width: 1024px) {
+  .about__container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* mobiles */
+@media screen and (max-width: 600px) {
+  .about__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 2rem;
+  }
+
+  .about__left .btn {
+    margin-top: 2rem;
+  }
+}

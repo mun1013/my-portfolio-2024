@@ -1,0 +1,36 @@
+footer {
+  display: grid;
+  place-items: center;
+  background: var(--color-theme-2);
+  padding: 1.5rem;
+  transition: var(--transition);
+}
+
+.footer__socials {
+  width: fit-content;
+  display: flex;
+  gap: 1.5rem;
+  margin: auto;
+}
+
+.footer__socials a {
+  width: 1.8rem;
+  aspect-ratio: 1/1;
+  background: var(--color-hover-button-text);
+  color: var(--color-hover-button);
+  display: grid;
+  place-items: center;
+  border-radius: var(--border-radius-3);
+}
+
+.footer__socials a:hover {
+  background: var(--color-hover-button);
+  color: var(--color-hover-button-text);
+  transform: translateY(-0.4rem);
+}
+
+.footer__copyright {
+  color: var(--color-desciption-text);
+  text-align: center;
+  padding-top: 0.5rem;
+}

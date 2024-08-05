@@ -1,0 +1,274 @@
+:root {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Theme color */
+  --theme-color-1: #fff0f3;
+  --theme-color-2: #ffccd5;
+  --theme-color-3: #ffb3c1;
+  --theme-color-4: #ff8fa3;
+  --theme-color-5: #ff758f;
+  --theme-color-6: #ff4d6d;
+  --theme-color-7: #c9184a;
+  --theme-color-8: #a4133c;
+  --theme-color-9: #800f2f;
+  --theme-color-10: #590d22;
+
+  /* Primary color */
+  --primary-color-1: #fffcf0;
+  --primary-color-2: #ffded6;
+  --primary-color-3: #ffc2ad;
+  --primary-color-4: #ffa693;
+  --primary-color-5: #ff8a7a;
+  --primary-color-6: #e66357;
+  --primary-color-7: #cc574d;
+  --primary-color-8: #b34b43;
+  --primary-color-9: #993f39;
+  --primary-color-10: #80332f;
+
+  /* General container */
+  --container-width-lg: 76%;
+  --container-width-md: 90%;
+  --container-width-sm: 100%;
+
+  /* General border radius */
+  --border-radius-1: 1.2rem;
+  --border-radius-2: 0.8rem;
+  --border-radius-3: 0.5rem;
+
+  /* General transition */
+  --transition: all 500ms ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+a {
+  font-size: 1rem;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  line-height: 1.6;
+  font-size: 0.9rem;
+}
+
+.theme-light {
+  --color-nav: var(--theme-color-4);
+  --color-theme-1: var(--theme-color-3);
+  --color-theme-2: var(--theme-color-2);
+  --color-theme-3: var(--color-nav);
+  --color-title-text: var(--theme-color-10);
+  --color-desciption-text: var(--theme-color-9);
+  --color-active-text: var(--theme-color-2);
+  --color-default-button: var(--primary-color-6);
+  --color-default-button-text: var(--theme-color-2);
+  --color-hover-button: var(--primary-color-8);
+  --color-hover-button-text: var(--theme-color-1);
+  --color-shadow-1: var(--theme-color-5);
+  --color-shadow-2: var(--theme-color-6);
+  --color-shadow-3: var(--theme-color-7);
+  --color-shadow-4: var(--theme-color-8);
+  --color-text-shadow-1: var(--theme-color-10);
+  --color-text-shadow-2: var(--primary-color-4);
+}
+
+.theme-dark {
+  --color-nav: var(--theme-color-7);
+  --color-theme-1: var(--theme-color-8);
+  --color-theme-2: var(--theme-color-9);
+  --color-theme-3: var(--primary-color-7);
+  --color-title-text: var(--theme-color-1);
+  --color-desciption-text: var(--theme-color-2);
+  --color-active-text: var(--theme-color-9);
+  --color-default-button: var(--primary-color-5);
+  --color-default-button-text: var(--theme-color-9);
+  --color-hover-button: var(--primary-color-4);
+  --color-hover-button-text: var(--theme-color-7);
+  --color-shadow-1: var(--theme-color-5);
+  --color-shadow-2: var(--theme-color-4);
+  --color-shadow-3: var(--theme-color-3);
+  --color-shadow-4: var(--theme-color-2);
+  --color-text-shadow-1: var(--theme-color-1);
+  --color-text-shadow-2: var(--primary-color-8);
+}
+
+main {
+  color: var(--theme-color-9);
+}
+
+/* General heading styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.1;
+  color: var(--color-title-text);
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+h4 {
+  font-size: 1.1rem;
+}
+
+h5 {
+  font-size: 0.95rem;
+}
+
+h6 {
+  font-size: 0.8rem;
+}
+
+p {
+  font-size: 1rem;
+  color: var(--color-desciption-text);
+}
+
+/* General container */
+.container {
+  width: var(--container-width-lg);
+  margin-inline: auto;
+  max-width: 1920px;
+}
+
+/* General section styles */
+section {
+  padding: 10rem 0;
+  transition: var(--transition);
+}
+
+section:nth-child(even) {
+  background: var(--color-white);
+}
+
+section > h2 {
+  text-align: center;
+}
+
+section > p {
+  text-align: center;
+  margin: 1rem auto 3rem;
+  width: 40%;
+}
+
+/* General image styles */
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* GENERAL button styles */
+.btn {
+  display: inline-block;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: var(--color-light);
+  color: var(--color-black);
+  padding: 0.6rem 2.5rem;
+  border: 2px solid transparent;
+  border-radius: var(--border-radius-2);
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: translateY(-0.5rem);
+}
+
+.btn.default {
+  background: var(--color-default-button);
+  color: var(--color-default-button-text);
+}
+
+.btn.default:hover {
+  background: var(--color-hover-button);
+  color: var(--color-hover-button-text);
+}
+
+.btn.sm {
+  padding: 0.5rem 1.2rem;
+}
+
+/* tablets */
+@media screen and (max-width: 1024px) {
+  body {
+    font-size: 1rem;
+  }
+
+  .container {
+    width: var(--container-width-md);
+  }
+
+  section {
+    padding: 8rem 0;
+  }
+
+  section > p {
+    width: 72%;
+    margin-bottom: 3rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+/* phones */
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 2.4rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+
+  .btn {
+    padding: 0.6rem 1.5rem;
+  }
+
+  section > p {
+    width: var(--container-width-md);
+  }
+}

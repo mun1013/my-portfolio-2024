@@ -1,0 +1,44 @@
+#header {
+  padding-top: 10%;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background: var(--color-theme-1);
+  transition: var(--transition);
+}
+
+#about {
+  display: grid;
+  place-items: center;
+  background-color: var(--color-theme-2);
+  transition: var(--transition);
+}
+
+#skills {
+  display: grid;
+  place-items: center;
+  background: var(--color-theme-1);
+  transition: var(--transition);
+}
+
+#blog {
+  display: grid;
+  place-items: center;
+  background: var(--color-theme-2);
+  transition: var(--transition);
+}
+
+#contact {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background: var(--color-theme-1);
+  transition: var(--transition);
+  padding: 15rem 0;
+}
+
+@media screen and (max-width: 400px) {
+  #header {
+    margin-top: 20%;
+  }
+}
