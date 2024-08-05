@@ -1,14 +1,17 @@
 # My Portfolio
 
-Welcome to my portfolio! This project showcases my work and skills. It is built using Vite, React, and TypeScript.
+Welcome to my portfolio! This project showcases my work and skills. It is built using Vite, React, and TypeScript. Visit this link[https://littlepea.netlify.app/].
 
 ## Table of Contents
 
-- [Home](#header)
-- [About](#about)
-- [Skills](#skills)
-- [Blog](#blog)
-- [Contact](#contact)
+- [My Portfolio](#my-portfolio)
+  - [Table of Contents](#table-of-contents)
+  - [Features](#features)
+  - [Technologies](#technologies)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [License](#license)
+  - [Contact](#contact)
 
 ## Features
 
